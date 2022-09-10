@@ -25,7 +25,7 @@ function App() {
           <Feed />
         </Route>
       </Switch>
-    </Router>
+  </Router> 
   );
 }
 
