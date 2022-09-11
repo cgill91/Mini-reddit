@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useMatch, useParams } from "react-router-dom";
+import { Link, useRouteMatch, useParams } from "react-router-dom";
 import "./FilterBar.css";
 
 function FilterBar() {
@@ -20,7 +20,7 @@ function FilterBar() {
       src: 'https://img.icons8.com/ios/50/000000/positive-dynamic.png',
     },
   ];
-  let { path, url } = useMatch();
+  let { path, url } = useRouteMatch();
   const params = useParams();
   const url_help = `r/${params.subreddit}`;
 

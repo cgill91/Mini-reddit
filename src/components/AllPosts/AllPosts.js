@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 // import { allPosts } from '../../mocks/posts';
 import "./AllPosts.css";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
 import { loadPosts, selectFilteredAllPosts } from "./AllPostsSlice";
 import Post from "../Post/Post";
 import { urlHelper } from "../../utils/urlHelper";
@@ -26,7 +26,7 @@ function AllPosts() {
 
   if (hasError) {
     if (error === "404") {
-      return <Navigate to="/page-not-found" />;
+      return <Redirect to="/page-not-found" />;
     } else
       return (
         <div className="all-posts-container">

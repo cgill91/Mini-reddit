@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import { comments } from '../../mocks/comment';
 import Comment from "../Comment/Comment";
 import Post from "../Post/Post";
 import "./Comments.css";
@@ -9,7 +8,7 @@ import {
   selectPostInfo,
 } from "./CommentsSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
 import { urlHelper } from "../../utils/urlHelper";
 
 function Comments() {
@@ -36,7 +35,7 @@ function Comments() {
 
   if (hasError) {
     if (error === "404") {
-      return <Navigate to="/page-not-found" />;
+      return <Redirect to="/page-not-found" />;
     } else
       return (
         <div className="all-posts-container" data-testid="comments">
