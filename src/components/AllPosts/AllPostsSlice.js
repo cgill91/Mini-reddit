@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { selectSearchTerm } from "../SearchBar/SearchSlice";
 
 let headers = {
-  //"User-Agent": "codecademt:go:v2.1 (by /u/sultan)",
+  
 };
 
 export const loadPosts = createAsyncThunk(

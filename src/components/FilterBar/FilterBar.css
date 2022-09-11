@@ -9,6 +9,7 @@
     border: 1px solid black;
     border-radius: 0.2rem;
     background-color: #e9e9e7;
+    background-image: linear-gradient(-15deg, #e9defa 0%, #fbfcdb 100%);
 }
 
 .filter-bar img {

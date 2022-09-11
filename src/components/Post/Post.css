@@ -33,6 +33,7 @@
     border-radius: 0.2rem;
     border: 1px solid black;
     overflow-wrap: anywhere;
+    background-image: linear-gradient(-15deg, #e9defa 0%, #fbfcdb 100%);
 }
 
 .post-content a {

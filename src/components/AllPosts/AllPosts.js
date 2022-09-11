@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import { allPosts } from '../../mocks/posts';
 import "./AllPosts.css";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams, Redirect } from "react-router-dom";

@@ -5,7 +5,7 @@
     height: min-content;
     border-radius: 0.2rem;
     border: 1px solid black;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background-image: linear-gradient(-15deg, #e9defa 0%, #fbfcdb 100%);
 }
 
 .subreddit-list-container h4 {
