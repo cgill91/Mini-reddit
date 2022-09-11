@@ -1,0 +1,54 @@
+.filter-bar {
+    overflow-x: hidden;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: filter;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    background-color: #e9e9e7;
+}
+
+.filter-bar img {
+    width: 18px;
+    padding-right: 2px;
+}
+
+.filter-bar button {
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 0.2rem;
+    position: relative;
+    transition: all .35s;
+}
+
+.filter-bar button span,
+.filter-bar button img {
+    position: relative;
+    z-index: 2;
+}
+
+.filter-bar button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    transition: all .35s;
+    border-radius: 0.2rem;
+}
+
+.filter-bar button:hover:after {
+    width: 100%;
+}

@@ -1,0 +1,113 @@
+.down-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.down-section h6 {
+    color: gray;
+}
+
+.comment-button {
+    display: flex;
+    align-items: center;
+}
+
+.comment-button h6 {
+    color: black;
+    font-weight: 200;
+}
+
+.comment-button img {
+    width: 18px;
+    padding-right: 2px;
+}
+
+.post-container {
+    margin-bottom: 20px;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    background-color: #fdfcfb;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    overflow-wrap: anywhere;
+}
+
+.post-content a {
+    text-decoration: underline;
+    color: #457397;
+}
+
+.post-container img,
+.post-container video {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.post-main-text-feed {
+    overflow: hidden;
+    height: 50px;
+}
+
+.votes-sidepanel {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    border-right: 1px solid gray;
+    width: 35px;
+    background-color: #e9e9e7;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.votes-sidepanel div {
+    padding: 5px 0;
+    font-size: 0.7rem;
+    width: 35px;
+    text-align: center;
+}
+
+.post-main {
+    padding: 15px;
+    width: 100%;
+}
+
+.post-main h3 {
+    padding: 15px 0;
+    font-family: Montserrat;
+}
+
+.post-main h6 {
+    font-family: MontserratBold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .post-container {
+        flex-direction: column-reverse;
+    }
+
+    .votes-sidepanel {
+        flex-direction: row;
+        width: 100%;
+        border-bottom-left-radius: 0.2rem;
+        border-bottom-right-radius: 0.2rem;
+        border-top-left-radius: 0;
+        border-right: none;
+        border-top: 1px solid gray;
+    }
+
+    .votes-sidepanel img{
+        width: 25px;
+    }
+
+    .post-main {
+        width: 90%;
+    }
+}

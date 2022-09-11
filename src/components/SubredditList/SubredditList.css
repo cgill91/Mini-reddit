@@ -1,0 +1,43 @@
+.subreddit-list-container {
+    overflow-x: hidden;
+    padding: 20px;
+    grid-area: sidebar;
+    height: min-content;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.subreddit-list-container h4 {
+    padding-bottom: 20px;
+    font-family: MontserratBold;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    margin: 20px auto;
+    border: 5px solid gray;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subreddit-list-container {
+        height: auto;
+        font-size: large;
+    }
+}

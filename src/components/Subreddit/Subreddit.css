@@ -1,0 +1,12 @@
+.subreddit {
+    padding: 7px 0;
+}
+
+.subreddit a {
+    color: black;
+    font-family: Montserrat;
+}
+
+.subreddit a:hover {
+    font-weight: 900;
+}
