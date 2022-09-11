@@ -8,7 +8,7 @@ function Header() {
     <div className="header">
       <Link to={"/"}>
         <div className="logo-content">
-          <img src="src\assets\logo.png" alt="reddit logo" />
+        
           <h3>minireddit</h3>
         </div>
       </Link>
