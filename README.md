@@ -20,3 +20,8 @@ A simplified Reddit web application that allows users to view posts and comments
 - Users can sort and search posts.
 - Utilises the reddit API to fetch posts and comments from reddit directly.
 - Uses React Router to navigate between pages and generate a comments page for each post.
+
+
+## Deployment
+
+To view the app please visit https://cgill-minireddit.netlify.app/
